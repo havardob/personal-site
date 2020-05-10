@@ -24,5 +24,8 @@
   "dependencies": {
     "markdown-it": "^10.0.0",
     "markdown-it-anchor": "^5.2.7"
+  },
+  "devDependencies": {
+    "@11ty/eleventy-navigation": "^0.1.5"
   }
 }

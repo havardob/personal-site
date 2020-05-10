@@ -1,4 +1,6 @@
 const MarkdownIt = require("markdown-it");
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+
 // let markdownItAnchor = require("markdown-it-anchor");
 
 let mdOptions = {
@@ -15,6 +17,9 @@ let mdOptions = {
 const mdRenderer = MarkdownIt(mdOptions);
 
 module.exports = function (eleventyConfig) {
+    eleventyConfig.addPlugin(eleventyNavigationPlugin);
+
+
     eleventyConfig.addFilter("md", function (content) {
         return mdRenderer.render(content);
     });

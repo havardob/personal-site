@@ -105,3 +105,10 @@ dist
 
 _site
 .now
+css/_writing.scss
+css/_icons.scss
+css/_mixins.scss
+css/_reset.scss
+css/_article.scss
+css/styles.scss
+css/styles.css.map
