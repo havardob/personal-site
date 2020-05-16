@@ -1,0 +1,26 @@
+.site-header-content {
+   max-width: 1900px;
+   margin-left: auto;
+   margin-right: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 6rem;
+   @include screen-size(tablet-landscape) {
+      height: 8rem;
+   }
+}
+
+.site-logo {
+   z-index: 300;
+   svg {
+      display: block;
+      height: 3rem;
+      fill: var(--link-color);
+   }
+}
+
+.site-navigation {
+   display: flex;
+   align-items: center;
+}

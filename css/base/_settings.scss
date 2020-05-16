@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+
+@font-face {
+   font-family: "Manrope";
+   src: url("../font/Manrope-Regular.woff2") format("woff2"),
+      url("../font/Manrope-Regular.woff2") format("woff");
+   font-weight: 400;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Manrope";
+   src: url("../font/Manrope-SemiBold.woff2") format("woff2"),
+      url("../font/Manrope-SemiBold.woff") format("woff");
+   font-weight: 600;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Manrope";
+   src: url("font/Manrope-Bold.woff2") format("woff2"),
+      url("font/Manrope-Bold.woff") format("woff");
+   font-weight: 700;
+   font-style: normal;
+}
+
+:root {
+   --primary-font-family: "Public Sans";
+   --primary-bg-color: #fff;
+   --secondary-bg-color: #abd1c6;
+   --primary-text-color: #2b2c34;
+   --secondary-text-color: #787878;
+   --link-color: #004643;
+   --scrollbar-color: var(--primary-text-color);
+   --scrollbar-track-color: var(--primary-bg-color);
+   &.dark-mode {
+      --primary-bg-color: #2c2320;
+      --secondary-bg-color: #55423d;
+      --primary-text-color: #fff3ec;
+      --secondary-text-color: #fff3ec;
+      --link-color: #ffc0ad;
+      --scrollbar-color: var(--primary-text-color);
+      --scrollbar-track-color: var(--primary-bg-color);
+   }
+}

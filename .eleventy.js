@@ -40,9 +40,15 @@ module.exports = function (eleventyConfig) {
         return `<${tagname} class="${classnames}">${content}</${tagname}>`
     });
 
-    eleventyConfig.addShortcode("image", function (source, alt) {
+    eleventyConfig.addShortcode("image", function (src, altText = '') {
         const html = String.raw;
 
-        return `<img src="${source}" alt-text="${alt}" style="width: 200%; margin-left: -200px;"/>`;
+        return html `
+<img
+    class="article-featured-image"
+    src="${src}"
+    alt="${altText}"
+/>
+`;
     });
 }

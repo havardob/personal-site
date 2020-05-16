@@ -6,6 +6,7 @@ darkModeToggle.addEventListener("change", function () {
     localStorage.setItem('theme', html.classList.contains('dark-mode') ? 'dark' : 'light');
 })
 
+
 if (localStorage.getItem('theme') === 'dark') {
     html.classList.toggle('dark-mode');
     darkModeToggle.checked = true;
