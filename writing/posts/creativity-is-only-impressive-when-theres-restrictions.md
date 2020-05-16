@@ -4,6 +4,8 @@ summary: Why “form follows function” is a valid design principle in today’
 date: 2020-03-01
 ---
 
+{% image 'https://miro.medium.com/max/1400/1*SPePqjxnIn-7FQHJXvfNzg.png', '', '', 'Source', 'https://www.opendoodles.com/' %}
+
 You’ve probably heard the phrase before. It’s a principle which originated in
 architectural design, but has found its way into other design areas, like
 industrial design or web design. The idea in itself is simple: your designs
@@ -26,16 +28,9 @@ revolution brought along by the smartphones. Now we’ve arrived at what’s
 becoming the 4th century of the modern web — and the web design business is
 booming like never before.
 
-Right now [a lot of designers](https://medium.com/search?q=design trends for
+Right now [a lot of designers](https://medium.com/search?q=design%20trends%20for%202020) try to predict what’s going to be the next big trends in web and UI design. Many predictions are revolving around the same subjects: AR- and VR-technology, the rise of vocal interaction or the buzzword that is “[Neumorphism](https://uxdesign.cc/neumorphism-in-user-interfaces-b47cef3bf3a6)”.
 
-2020. try to predict what’s going to be the next big trends in web and UI
-      design. Many predictions are revolving around the same subjects: AR- and
-      VR-technology, the rise of vocal interaction or the buzzword that is
-      “[Neumorphism](https://uxdesign.cc/neumorphism-in-user-interfaces-b47cef3bf3a6)”.
-
-![](https://cdn-images-1.medium.com/max/800/0*gKyVaGSKoDShBshO.png)
-“Neumorphism”.
-[Source](https://dribbble.com/shots/9517002--Light-Mode-Simple-Music-Player)
+{% image 'https://cdn-images-1.medium.com/max/800/0*gKyVaGSKoDShBshO.png', '"Neumorphism".', '', 'Source', 'https://uxdesign.cc/neumorphism-in-user-interfaces-b47cef3bf3a6' %}
 
 What’s going to stick and what’s not is hard to say (even though I’m fairly sure
 that neumorphism is just [a fart in the
@@ -58,8 +53,7 @@ client happy and the users somewhat got what they needed (or at least we thought
 the users got what they needed). Those were perhaps the only factors you had to
 account for.
 
-![](https://cdn-images-1.medium.com/max/800/1*6igsn3adL4jlZLmeZtDPhw.png)
-<span class="figcaption_hack">A typical approach to web design</span>
+{% image 'https://cdn-images-1.medium.com/max/800/1*6igsn3adL4jlZLmeZtDPhw.png', 'A typical approach to web design' %}
 
 Since then the web has changed. A lot. We have ability to touch, use keyboard
 navigation, voice control, point and click, wave, exhale ([yep, you read that
@@ -78,9 +72,7 @@ responsive or mobile friendly. All in all we have more factors to consider when
 designing web pages now than before. The former venn diagram will perhaps look
 something like this today:
 
-![](https://cdn-images-1.medium.com/max/800/1*VXCbju-rmyb_1S_dIhLs1Q.png)
-<span class="figcaption_hack">I regret choosing a venn diagram to illustrate this, but I’m not redoing these
-pictures now</span>
+{% image 'https://cdn-images-1.medium.com/max/800/1*VXCbju-rmyb_1S_dIhLs1Q.png', 'I regret choosing a venn diagram to illustrate this, but I’m not redoing these pictures now' %}
 
 This means that when it comes to web design you can no longer just do whatever
 you “want”. What I’m saying is that you have several rules or guidelines to
@@ -104,8 +96,7 @@ _necessary_.
 Let’s look at some other examples, like Tottenham Hotspurs’ website for
 instance:
 
-![](https://cdn-images-1.medium.com/max/800/1*JMJc6PhfLACJxKDXpidzHg.png)
-<span class="figcaption_hack">The front page of Tottenham Hotspurs’ website</span>
+{% featuredImage 'https://cdn-images-1.medium.com/max/800/1*JMJc6PhfLACJxKDXpidzHg.png', 'The front page of Tottenham Hotspurs’ website' %}
 
 Beautiful, right? Well, yeah — I for one thinks so — but there’s one thing which
 immediately catches my eye here: the accessibility-toggle at the top.

@@ -25,3 +25,26 @@
       justify-content: center;
    }
 }
+
+.link {
+   font-weight: 600;
+   color: var(--link-color);
+}
+
+.container {
+   width: 90vw;
+   max-width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+
+   &--narrow {
+      max-width: 600px;
+   }
+
+   &--compact {
+      max-width: 800px;
+   }
+   &--full-width {
+      max-width: 1900px;
+   }
+}

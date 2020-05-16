@@ -13,24 +13,6 @@
    max-width: 800px;
 }
 
-.container {
-   width: 90vw;
-   max-width: 1200px;
-   margin-left: auto;
-   margin-right: auto;
-
-   &--narrow {
-      max-width: 600px;
-   }
-
-   &--compact {
-      max-width: 800px;
-   }
-   &--full-width {
-      max-width: 1900px;
-   }
-}
-
 .page-title {
    font-weight: 700;
    line-height: 1.25;

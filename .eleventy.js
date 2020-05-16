@@ -32,7 +32,7 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy("img");
     eleventyConfig.addPassthroughCopy("manifest.json");
-    eleventyConfig.addPassthroughCopy("favicon.ico");
+    eleventyConfig.addPassthroughCopy("favicon.svg");
     eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("js");
 
@@ -40,15 +40,33 @@ module.exports = function (eleventyConfig) {
         return `<${tagname} class="${classnames}">${content}</${tagname}>`
     });
 
-    eleventyConfig.addShortcode("image", function (src, altText = '') {
-        const html = String.raw;
+    eleventyConfig.addShortcode("featuredImage", function (src, caption = '', altText = '', creditCaption = '', Creditsource) {
 
-        return html `
+        return `
+<figure class="article-image article-image--featured">
+<div class="article-image-wrapper">
 <img
-    class="article-featured-image"
-    src="${src}"
-    alt="${altText}"
+src="${src}"
+alt="${altText}" 
 />
+</div>
+<figcaption class="article-image-caption">${caption}</figcaption>
+</figure>
+`;
+    });
+
+    eleventyConfig.addShortcode("image", function (src, caption = '', altText = '', creditCaption = '', creditSource) {
+
+        return `
+<figure class="article-image">
+<div class="article-image-wrapper">
+<img
+src="${src}"
+alt="${altText}" 
+/>
+</div>
+<figcaption class="article-image-caption">${caption} <a href="${creditSource}">${creditCaption}</a></figcaption>
+</figure>
 `;
     });
 }
