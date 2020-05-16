@@ -1,0 +1,15 @@
+---
+layout: layouts/base.njk
+section: post
+---
+
+<article class="article container">
+    <header class="article-header container container--compact">
+        <h1 class="article-title">{{ title }}</h1>
+        <div class="article-leading">{{ summary | md | safe }}
+        </div>
+    </header>
+    <div class="article-body content container container--narrow">
+        {{ layoutContent | safe }}
+    </div>
+</article>

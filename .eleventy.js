@@ -39,4 +39,10 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPairedShortcode("element", function (content, tagname, classnames) {
         return `<${tagname} class="${classnames}">${content}</${tagname}>`
     });
+
+    eleventyConfig.addShortcode("image", function (source, alt) {
+        const html = String.raw;
+
+        return `<img src="${source}" alt-text="${alt}" style="width: 200%; margin-left: -200px;"/>`;
+    });
 }

@@ -1,0 +1,129 @@
+.blocks {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   max-width: 1200px;
+   padding-left: 100px;
+   padding-top: 6rem;
+}
+
+.block {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+.page-header {
+   width: 100%;
+   padding-top: 4rem;
+   @include screen-size(tablet-portrait) {
+      padding-top: 5rem;
+   }
+   @include screen-size(desktop) {
+      padding-top: 6rem;
+   }
+}
+
+.page-header-content {
+   max-width: 800px;
+}
+
+.container {
+   width: 90vw;
+   max-width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+
+   &--narrow {
+      max-width: 600px;
+   }
+
+   &--compact {
+      max-width: 800px;
+   }
+   &--full-width {
+      max-width: 1900px;
+   }
+}
+
+.page-title {
+   font-weight: 700;
+   line-height: 1.25;
+   font-size: 2rem;
+   @include screen-size(tablet-portrait) {
+      font-size: 2.5rem;
+   }
+   @include screen-size(desktop) {
+      font-size: 3.5rem;
+   }
+}
+
+.page-intro {
+   margin-top: 0.5em;
+   font-size: 1.25rem;
+   @include screen-size(tablet-portrait) {
+      font-size: 1.5rem;
+   }
+   @include screen-size(desktop) {
+      font-size: 1.75rem;
+   }
+
+   a {
+      font-weight: 700;
+      color: var(--link-color);
+   }
+}
+
+.article-list {
+   max-width: 800px;
+   padding-top: 4rem;
+   padding-bottom: 8rem;
+   @include screen-size(tablet-portrait) {
+      padding-left: 4rem;
+      padding-top: 5rem;
+      padding-bottom: 10rem;
+   }
+   @include screen-size(desktop) {
+      font-size: 1.75rem;
+      padding-left: 8rem;
+      padding-top: 6rem;
+      padding-bottom: 12rem;
+   }
+}
+
+.article-list-item {
+   & + * {
+      margin-top: 3rem;
+      @include screen-size(tablet-portrait) {
+         margin-top: 3.5rem;
+      }
+      @include screen-size(desktop) {
+         margin-top: 4rem;
+      }
+   }
+}
+
+.article-list-item-title {
+   font-size: 1.25rem;
+   font-weight: 700;
+   line-height: 1.4;
+   color: var(--link-color);
+   @include screen-size(tablet-portrait) {
+      font-size: 1.5rem;
+   }
+   @include screen-size(desktop) {
+      font-size: 1.75rem;
+   }
+}
+
+.article-list-item-excerpt {
+   margin-top: 0.5em;
+   font-size: 1rem;
+   color: var(--secondary-text-color);
+   @include screen-size(tablet-portrait) {
+      font-size: 1.125rem;
+   }
+   @include screen-size(desktop) {
+      font-size: 1.25rem;
+   }
+}

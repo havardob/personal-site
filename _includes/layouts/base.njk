@@ -1,0 +1,11 @@
+{% include "components/head.njk" %}
+
+<div class="site">
+    {% include "components/header.njk" %}
+    <main class="site-content">
+        {{ content | safe }}
+    </main>
+    {% include "components/footer.njk" %}
+</div>
+
+{% include "components/foot.njk" %}
