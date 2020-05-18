@@ -101,10 +101,8 @@ instance:
 Beautiful, right? Well, yeah — I for one thinks so — but there’s one thing which
 immediately catches my eye here: the accessibility-toggle at the top.
 
-![](https://cdn-images-1.medium.com/max/600/1*mViAlmBphy9nxlU_meL_DA.png)
-
-![](https://cdn-images-1.medium.com/max/800/1*JMJc6PhfLACJxKDXpidzHg.png)
-<span class="figcaption_hack">“Accessibility on, accessibility off” — the lesser known Miyagi quote.</span>
+{% image 'https://cdn-images-1.medium.com/max/600/1*mViAlmBphy9nxlU_meL_DA.png' %}
+{% image 'https://cdn-images-1.medium.com/max/800/1*JMJc6PhfLACJxKDXpidzHg.png', 'Accessibility on, accessibility off” — the lesser known Miyagi quote.' %}
 
 If you turn it on you can see that the image fades and the color contrast
 between the text and image increases. Nice feature, right? Sure, but why isn’t
@@ -116,8 +114,7 @@ accessible solution.
 
 Here we have a screenshot of Medium’s iOS-app:
 
-![](https://cdn-images-1.medium.com/max/800/1*R0iScbEelwkucly_cRJCag.png)
-<span class="figcaption_hack">I should charge my phone</span>
+{% image 'https://cdn-images-1.medium.com/max/800/1*R0iScbEelwkucly_cRJCag.png', 'I should charge my phone' %}
 
 It’s stunningly simple and minimalistic, don’t you think? Take a look at the
 navigation bar at the bottom. You can see that it features icons only, faded

@@ -12,4 +12,8 @@ section: post
     <div class="article-body container container--narrow content">
         {{ layoutContent | safe }}
     </div>
+    <div class="article-info">
+        <ion-icon name="link-outline"></ion-icon>
+        {{ about | md | safe }}
+    </div>
 </article>

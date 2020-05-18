@@ -79,7 +79,14 @@
    font-weight: 600;
    color: var(--link-color);
    ion-icon {
-      font-size: 1.25em;
-      margin-right: 0.25em;
+      font-size: 1.5rem;
+      margin-left: 0.25rem;
+      transform: rotate(-45deg);
    }
+
+   // &.external:after {
+   //    content: "♡";
+   //    margin-left: 0.125rem;
+   //    font-size: 1.5rem;
+   // }
 }

@@ -41,10 +41,10 @@
                         <li class="main-menu-item">
 
                             <a href="{{ nav.url | url }}" class="main-menu-link">
-                                {# {% if nav.data.icon %}
-                                    <ion-icon name="{{ nav.data.icon }}"></ion-icon>
-                                {% endif %} #}
                                 {{ nav.title }}
+                                {% if nav.external %}
+                                    <ion-icon name="link-outline"></ion-icon>
+                                {% endif %}
                             </a>
                         </li>
                     {%- endfor -%}
