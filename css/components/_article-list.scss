@@ -27,8 +27,19 @@
    }
 }
 
+.article-list-item-date {
+   color: var(--secondary-text-color);
+   @include screen-size(tablet-portrait) {
+      font-size: 1rem;
+   }
+   @include screen-size(desktop) {
+      font-size: 1.125rem;
+   }
+}
+
 .article-list-item-title {
    font-size: 1.25rem;
+   margin-top: 0.25em;
    font-weight: 700;
    line-height: 1.4;
    color: var(--link-color);
@@ -45,9 +56,9 @@
    font-size: 1rem;
    color: var(--secondary-text-color);
    @include screen-size(tablet-portrait) {
-      font-size: 1.125rem;
+      font-size: 1.25rem;
    }
    @include screen-size(desktop) {
-      font-size: 1.25rem;
+      font-size: 1.375rem;
    }
 }

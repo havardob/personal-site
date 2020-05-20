@@ -1,5 +1,8 @@
 const MarkdownIt = require("markdown-it");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const {
+    DateTime
+} = require("luxon");
 
 // let markdownItAnchor = require("markdown-it-anchor");
 
@@ -24,6 +27,12 @@ module.exports = function (eleventyConfig) {
         return mdRenderer.render(content);
     });
 
+    eleventyConfig.addFilter("readableDate", dateObj => {
+        return DateTime.fromJSDate(dateObj, {
+            zone: 'utc'
+        }).toFormat("dd LLLL yyyy");
+    });
+
     // eleventyConfig.setLibrary("md", mdRenderer
     //     .use(markdownItAnchor, opts)
     // );
@@ -45,10 +54,12 @@ module.exports = function (eleventyConfig) {
         return `
 <figure class="article-image article-image--featured">
 <div class="article-image-wrapper">
+<a href="${src}" target="_blank">
 <img
 src="${src}"
 alt="${altText}" 
 />
+</a>
 </div>
 <figcaption class="article-image-caption">${caption}</figcaption>
 </figure>
@@ -60,10 +71,12 @@ alt="${altText}"
         return `
 <figure class="article-image">
 <div class="article-image-wrapper">
+<a href="${src}" target="_blank">
 <img
 src="${src}"
 alt="${altText}" 
 />
+</a>
 </div>
 <figcaption class="article-image-caption">${caption} <a href="${creditSource}">${creditCaption}</a></figcaption>
 </figure>

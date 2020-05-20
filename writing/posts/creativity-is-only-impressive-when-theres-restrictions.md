@@ -1,7 +1,8 @@
 ---
 title: Creativity is only impressive when there’s restrictions
 summary: Why “form follows function” is a valid design principle in today’s web design landscape.
-date: 2020-03-01
+date: 2020-02-25
+about: This article was first published in the publication [UXCollective](https://uxdesign.cc/) on Medium. [Read it here](https://uxdesign.cc/creativity-is-only-impressive-when-theres-restrictions-d33b83855ce1)
 ---
 
 {% image 'https://miro.medium.com/max/1400/1*SPePqjxnIn-7FQHJXvfNzg.png', '', '', 'Source', 'https://www.opendoodles.com/' %}
@@ -10,7 +11,7 @@ You’ve probably heard the phrase before. It’s a principle which originated i
 architectural design, but has found its way into other design areas, like
 industrial design or web design. The idea in itself is simple: your designs
 should first and foremost relate to the products intended function or purpose.
-How you *interpret *the phrase is another thing. Some talk about “form follow
+How you _interpret_ the phrase is another thing. Some talk about “form follow
 function” from a philosophical point of view — that true beauty comes directly
 from purity of function, whereas other talk about making design decisions based
 on _how_ the product should function, and that the aesthetics should play a
