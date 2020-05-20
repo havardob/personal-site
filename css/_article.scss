@@ -57,3 +57,31 @@
       font-size: 1.375rem;
    }
 }
+
+.article-info {
+   margin-top: 3rem;
+   // background-color: var(--secondary-bg-color);
+   border: 0.125rem dashed var(--secondary-bg-color);
+   border-radius: 10px;
+   padding: 2rem;
+   text-align: center;
+   @include screen-size(tablet-portrait) {
+      font-size: 1.25rem;
+      padding: 3rem;
+      margin-top: 4rem;
+   }
+
+   @include screen-size(tablet-landscape) {
+      font-size: 1.375rem;
+   }
+}
+
+.medium-icon {
+   svg {
+      width: 2.5rem;
+      height: auto;
+      path {
+         fill: var(--link-color);
+      }
+   }
+}
