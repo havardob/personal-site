@@ -141,7 +141,7 @@ we’ve created for ourselves.
 What we consider “good” design today may change in the future (it certainly has
 over the last years), but that doesn’t mean we should casually ignore best
 practices or international standards in favor of what subjectively looks good.
-Form *should *follow function, even if it means you’ll have to change your
+Form _should_ follow function, even if it means you’ll have to change your
 design or kill your darlings. Some say that rules and guidelines kills
 creativity and removes the freedom of creation. I don’t believe that. I believe,
 even though your options are limited, that true creativity lies in the skill to
