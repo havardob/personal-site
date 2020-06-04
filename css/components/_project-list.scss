@@ -78,6 +78,7 @@
 
 .project-list-item-excerpt {
    margin-top: 0.5em;
+   margin-bottom: 0.5em;
    font-size: 1rem;
    color: var(--secondary-text-color);
    @include screen-size(tablet-portrait) {
@@ -91,16 +92,19 @@
 .project-list-item-category {
    background-color: var(--secondary-bg-color);
    color: var(--link-color);
-   font-size: 0.5em;
+   font-size: 0.75rem;
    display: inline-flex;
-   margin-right: 0.5em;
-   margin-bottom: 0.5em;
+   margin-right: 0.5rem;
+   margin-top: 0.5rem;
    align-items: center;
    line-height: 1;
-   padding: 0.5em 0.75em;
+   padding: 0.5rem 0.75rem;
    border-radius: 0.25rem;
    text-transform: uppercase;
    font-weight: 600;
+   @include screen-size(desktop) {
+      font-size: 0.875rem;
+   }
    &:before {
       content: "";
       display: block;
