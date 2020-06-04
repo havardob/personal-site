@@ -1,0 +1,43 @@
+---
+layout: layouts/base.njk
+---
+
+<div class="page-header">
+    <div class="page-header-content container">
+        <h1 class="page-title">{{ title }}</h1>
+        <div class="page-intro">{{ content | safe }}</div>
+    </div>
+</div>
+<div class="block container">
+    <div class="project-list">
+
+        {% set projectslist = collections.project %}
+        {% for project in projectslist | reverse %}
+            <div class="project-list-item">
+                {% if project.data.img %}
+                    <div class="project-list-item-image-wrapper">
+                        <img class="project-list-item-image" src="{{ project.data.img | url }}" />
+                    </div>
+                {% endif %}
+                <div class="project-list-item-content">
+                    <h2 class="project-list-item-title">
+                        <a href="{{ project.data.source | url }}">
+                            {% if project.data.title %}
+                                {{ project.data.title }}
+                            {% else %}
+						Untitled
+                        {% endif %}
+                        </a>
+                    </h2>
+                    {% if project.data.summary %}
+                        <div class="project-list-item-excerpt">{{ project.data.summary | md | safe }}</div>
+                    {% endif %}
+
+                    {% for category in project.data.category %}
+                        <span class="project-list-item-category">{{ category }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
