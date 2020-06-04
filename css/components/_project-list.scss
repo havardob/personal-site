@@ -1,0 +1,113 @@
+.project-list {
+   padding-top: 2rem;
+   padding-bottom: 8rem;
+   @include screen-size(tablet-portrait) {
+      padding-top: 2.5rem;
+      padding-bottom: 10rem;
+   }
+   @include screen-size(desktop) {
+      font-size: 1.75rem;
+      padding-top: 3rem;
+      padding-bottom: 12rem;
+   }
+}
+
+.project-list-item {
+   @include screen-size(desktop) {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      &:nth-child(even) {
+         & > *:first-child {
+            order: 2;
+         }
+      }
+      & > * {
+         width: calc(50% - 2rem);
+      }
+   }
+   & + * {
+      margin-top: 4rem;
+      @include screen-size(tablet-portrait) {
+         margin-top: 5rem;
+      }
+      @include screen-size(desktop) {
+         margin-top: 6rem;
+      }
+   }
+}
+
+.project-list-item-image-wrapper {
+   background: repeating-linear-gradient(
+      45deg,
+      var(--primary-bg-color),
+      var(--primary-bg-color) 5px,
+      var(--secondary-bg-color) 5px,
+      var(--secondary-bg-color) 10px
+   );
+   padding: 0.5rem;
+   @include screen-size(desktop) {
+      background: repeating-linear-gradient(
+         45deg,
+         var(--primary-bg-color),
+         var(--primary-bg-color) 8px,
+         var(--secondary-bg-color) 8px,
+         var(--secondary-bg-color) 16px
+      );
+      padding: 0.75rem;
+   }
+}
+
+.project-list-item-title {
+   font-size: 1.25rem;
+   margin-top: 1.5rem;
+   font-weight: 700;
+   line-height: 1.4;
+   color: var(--link-color);
+
+   @include screen-size(tablet-portrait) {
+      font-size: 1.5rem;
+   }
+   @include screen-size(desktop) {
+      font-size: 1.75rem;
+      margin-top: 0;
+      padding-top: 3rem;
+   }
+}
+
+.project-list-item-excerpt {
+   margin-top: 0.5em;
+   font-size: 1rem;
+   color: var(--secondary-text-color);
+   @include screen-size(tablet-portrait) {
+      font-size: 1.25rem;
+   }
+   @include screen-size(desktop) {
+      font-size: 1.375rem;
+   }
+}
+
+.project-list-item-category {
+   background-color: var(--secondary-bg-color);
+   color: var(--link-color);
+   font-size: 0.5em;
+   display: inline-flex;
+   margin-right: 0.5em;
+   margin-bottom: 0.5em;
+   align-items: center;
+   line-height: 1;
+   padding: 0.5em 0.75em;
+   border-radius: 0.25rem;
+   text-transform: uppercase;
+   font-weight: 600;
+   &:before {
+      content: "";
+      display: block;
+      width: 6px;
+      height: 6px;
+      background-color: currentColor;
+      border-radius: 50%;
+      margin-right: 8px;
+   }
+}
