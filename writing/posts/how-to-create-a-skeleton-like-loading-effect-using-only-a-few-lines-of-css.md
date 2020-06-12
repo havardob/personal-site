@@ -47,7 +47,7 @@ OK, I'll admit that this probably isn't the most self-explanatory piece of code 
 -  `rgba(#FFF, 0)` makes last section of the gradient white with a 0 alpha value, making it transparent
 
 > **Note:**<br />
-> The `rgba(#FFF, 0)` is written in SCSS and not native CSS. If you're using native CSS the correct way to write this function is by using the actual RGBA values, like this: `rgba(255,255,255,0)`
+> The `rgba(#FFF, 0)` function is written in SCSS and not native CSS. If you're using native CSS the correct way to write this function is by using the actual RGBA values, like this: `rgba(255,255,255,0)`
 
 Now there's a linear-gradient across the entire width of the skeleton. We don't want that, we want a 'narrow ray of light', so let's decide the width of the shine effect by using `background-size`:
 
