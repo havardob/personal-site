@@ -1,6 +1,5 @@
 .article {
    width: 100%;
-   max-width: 1000px;
    padding-top: 4rem;
    padding-bottom: 6rem;
    overflow-wrap: break-word;
@@ -23,38 +22,38 @@
    line-height: 1.25;
    font-size: 2rem;
    @include screen-size(tablet-portrait) {
-      font-size: 2.5rem;
+      font-size: 2.375rem;
    }
    @include screen-size(desktop) {
-      font-size: 3.5rem;
+      font-size: 3rem;
    }
 }
 
 .article-leading {
-   margin-top: 1em;
+   margin-top: 0.5em;
    font-size: 1.25rem;
-   @include screen-size(tablet-portrait) {
-      font-size: 1.375rem;
-   }
-
-   @include screen-size(tablet-landscape) {
-      font-size: 1.5rem;
-   }
-
-   @include screen-size(desktop) {
-      font-size: 1.75rem;
-   }
-}
-
-.article-body {
-   margin-top: 1.5em;
-   font-size: 1.125rem;
    @include screen-size(tablet-portrait) {
       font-size: 1.25rem;
    }
 
    @include screen-size(tablet-landscape) {
       font-size: 1.375rem;
+   }
+
+   @include screen-size(desktop) {
+      font-size: 1.5rem;
+   }
+}
+
+.article-body {
+   margin-top: 2em;
+   font-size: 1rem;
+   @include screen-size(tablet-portrait) {
+      font-size: 1.125rem;
+   }
+
+   @include screen-size(tablet-landscape) {
+      font-size: 1.25rem;
    }
 }
 
