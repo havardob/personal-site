@@ -47,25 +47,25 @@
       font-size: 1.5rem;
       line-height: 1.25;
       @include screen-size(tablet-portrait) {
-         font-size: 1.75rem;
+         font-size: 1.675rem;
          line-height: 1.125;
       }
 
       @include screen-size(tablet-landscape) {
-         font-size: 2.25rem;
+         font-size: 1.75rem;
       }
    }
 
    h3 {
       font-weight: 700;
-      font-size: 1.25rem;
+      font-size: 1.125rem;
       @include screen-size(tablet-portrait) {
-         font-size: 1.375rem;
+         font-size: 1.25rem;
       }
 
       @include screen-size(tablet-landscape) {
          line-height: 1.25;
-         font-size: 1.5rem;
+         font-size: 1.375rem;
       }
    }
 
@@ -95,24 +95,29 @@
       padding-top: 0.5em;
       padding-bottom: 0.5em;
       border-left: 0.25rem solid var(--link-color);
-      font-size: 1.25em;
+      font-size: 1.125em;
+      margin-left: -8rem;
+      font-style: italic;
    }
 
    code {
-      background-color: var(--secondary-bg-color);
-      color: var(--link-color);
+      color: var(--primary-bg-color);
       padding: 0.25em;
       font-family: monospace;
+      background-color: var(--primary-text-color);
+      font-size: 1.125em;
    }
 
    pre {
-      background-color: var(--secondary-bg-color);
-      color: var(--link-color);
+      border: 4px solid var(--primary-text-color);
+      color: var(--primary-text-color);
       padding: 1.75em;
       font-family: monospace;
       code {
+         color: var(--primary-text-color);
          display: block;
          overflow-x: auto;
+         background-color: transparent;
       }
       @include screen-size(tablet-landscape) {
          margin-left: -8rem;
