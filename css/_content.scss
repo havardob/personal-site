@@ -96,8 +96,10 @@
       padding-bottom: 0.5em;
       border-left: 0.25rem solid var(--link-color);
       font-size: 1.125em;
-      margin-left: -8rem;
       font-style: italic;
+      @include screen-size(tablet-landscape) {
+         margin-left: -8rem;
+      }
    }
 
    code {
@@ -118,9 +120,6 @@
          display: block;
          overflow-x: auto;
          background-color: transparent;
-      }
-      @include screen-size(tablet-landscape) {
-         margin-left: -8rem;
       }
    }
 }

@@ -8,7 +8,7 @@ date: 2020-06-12
 
 ## Just give me the code
 
-What we'll be creating: [Demo (CodePen)]('https://codepen.io/havardob/full/dyGGGzq')
+What we'll be creating: [Demo (CodePen)](https://codepen.io/havardob/full/dyGGGzq)
 
 ## Step 1 - Skeleton
 
