@@ -115,6 +115,7 @@
       color: var(--primary-text-color);
       padding: 1.75em;
       font-family: monospace;
+      box-shadow: inset -6px -6px 0 var(--primary-text-color);
       code {
          color: var(--primary-text-color);
          display: block;
