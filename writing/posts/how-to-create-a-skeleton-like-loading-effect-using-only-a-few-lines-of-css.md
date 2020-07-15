@@ -27,17 +27,21 @@ Notice that I've added a height and a width to the `div` element. I'm only doing
 
 We start off with a basic `background-color`. This will be the background of our skeleton at which the shine effect will slide across:
 
-    background-color: #e2e5e7;
+```scss
+background-color: #e2e5e7;
+```
 
 Then we'll add the shine effect using `background-image: linear-gradient()`:
 
-    background-image:
+```scss
+background-image:
     linear-gradient(
         90deg,
         rgba(#fff, 0),
         rgba(#fff, 0.5),
         rgba(#fff, 0)
     );
+```
 
 OK, I'll admit that this probably isn't the most self-explanatory piece of code if you're unfamiliar with the `linear-gradient()` function. Here's what's happening:
 
@@ -57,7 +61,9 @@ The width is now 40px and the height equals 100% of the elements height. You'll 
 
 You see, even though we've created a background-image using linear gradient instead of using an image from an url (as you'd probably normally do then using this property), it's still a _background-image_ and we'll have to treat it as such. Therefore you'll have to prevent the image from repeating itself:
 
-    background-repeat: no-repeat;
+```scss
+background-repeat: no-repeat;
+```
 
 Alright, we've layed the foundation. Now we'll have to animate it.
 
@@ -69,23 +75,29 @@ In the first step we've created a skeleton (background-color) and added a shine 
 
 Let's start with moving the background-image _outside_ the far left side:
 
-    background-position: left -40px top 0;
+```scss
+background-position: left -40px top 0;
+```
 
 Notice that the offset value of `-40px` is the same as the width of the background-image from the `background-size` property. The background-image is now placed outside the left side and is no longer visible to us. That's good.
 
 Next we'll add some CSS keyframes and create our animation:
 
-    @keyframes shine {
-        to {
-            background-position: right -40px top 0;
-        }
+```scss
+@keyframes shine {
+    to {
+        background-position: right -40px top 0;
     }
+}
+```
 
 Maybe you already know what's happening here. This animation will move the shine-effect (background-image) from a 40px offset on the left side to a 40px offset on the right side.
 
 Lastly we'll add the animation to the `.skeleton` class, like this:
 
-    animation: shine 1s ease infinite
+```scss
+animation: shine 1s ease infinite
+```
 
 The `infinite` value makes the animation play over and over again, making it look like it loops from left to right.
 

@@ -1,5 +1,6 @@
 const MarkdownIt = require("markdown-it");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const {
     DateTime
 } = require("luxon");
@@ -21,7 +22,7 @@ const mdRenderer = MarkdownIt(mdOptions);
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
-
+    eleventyConfig.addPlugin(pluginSyntaxHighlight);
 
     eleventyConfig.addFilter("md", function (content) {
         return mdRenderer.render(content);
