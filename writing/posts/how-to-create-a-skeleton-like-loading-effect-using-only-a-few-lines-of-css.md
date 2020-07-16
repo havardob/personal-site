@@ -34,13 +34,12 @@ background-color: #e2e5e7;
 Then we'll add the shine effect using `background-image: linear-gradient()`:
 
 ```scss
-background-image:
-    linear-gradient(
-        90deg,
-        rgba(#fff, 0),
-        rgba(#fff, 0.5),
-        rgba(#fff, 0)
-    );
+background-image: linear-gradient(
+   90deg,
+   rgba(#fff, 0),
+   rgba(#fff, 0.5),
+   rgba(#fff, 0)
+);
 ```
 
 OK, I'll admit that this probably isn't the most self-explanatory piece of code if you're unfamiliar with the `linear-gradient()` function. Here's what's happening:
@@ -55,7 +54,9 @@ OK, I'll admit that this probably isn't the most self-explanatory piece of code 
 
 Now there's a linear-gradient across the entire width of the skeleton. We don't want that, we want a 'narrow ray of light', so let's decide the width of the shine effect by using `background-size`:
 
-    background-size: 40px 100%;
+```scss
+background-size: 40px 100%;
+```
 
 The width is now 40px and the height equals 100% of the elements height. You'll probably notice something weird now: the linear-gradient repeats across the background.
 
@@ -85,9 +86,9 @@ Next we'll add some CSS keyframes and create our animation:
 
 ```scss
 @keyframes shine {
-    to {
-        background-position: right -40px top 0;
-    }
+   to {
+      background-position: right -40px top 0;
+   }
 }
 ```
 
@@ -96,7 +97,7 @@ Maybe you already know what's happening here. This animation will move the shine
 Lastly we'll add the animation to the `.skeleton` class, like this:
 
 ```scss
-animation: shine 1s ease infinite
+animation: shine 1s ease infinite;
 ```
 
 The `infinite` value makes the animation play over and over again, making it look like it loops from left to right.

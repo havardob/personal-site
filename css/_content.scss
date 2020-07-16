@@ -115,12 +115,33 @@
       color: var(--primary-text-color);
       padding: 1.75em;
       font-family: monospace;
-      box-shadow: inset -6px -6px 0 var(--primary-text-color);
+      border-image-source: linear-gradient(
+         90deg,
+         var(--primary-text-color),
+         transparent
+      );
+      border-image-slice: 1;
+
+      // box-shadow: inset -6px -6px 0 var(--primary-text-color);
       code {
          color: var(--primary-text-color);
          display: block;
          overflow-x: auto;
          background-color: transparent;
+      }
+   }
+
+   //
+
+   .language-scss {
+      font-weight: 600;
+      .token {
+         &.punctuation {
+            font-weight: 400;
+         }
+         &.property {
+            font-weight: 400;
+         }
       }
    }
 }

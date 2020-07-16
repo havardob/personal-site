@@ -23,6 +23,7 @@
    border-radius: 0.5rem;
    left: 1rem;
    max-width: calc(100vw - 2rem);
+   visibility: hidden;
    transform: scale(0);
    transform-origin: 0 100%;
    transition: transform 0.25s ease-in-out;
@@ -30,6 +31,7 @@
    z-index: 150;
 
    &.open {
+      visibility: visible;
       transform: scale(1);
       * {
          opacity: 1;

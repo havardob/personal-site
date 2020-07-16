@@ -17,7 +17,7 @@ let mdOptions = {
 //     permalink: true,
 //     permalinkClass: "direct-link",
 //     permalinkSymbol: "#"
-// };
+// }; 
 const mdRenderer = MarkdownIt(mdOptions);
 
 module.exports = function (eleventyConfig) {
