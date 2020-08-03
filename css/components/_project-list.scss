@@ -47,7 +47,8 @@
    //    var(--secondary-bg-color) 10px
    // );
    border: 4px solid;
-   // padding: 0.5rem;
+   // box-shadow: inset 0 0 0 0.5rem #fff;
+   padding: 0.5em;
    @include screen-size(desktop) {
       // background: repeating-linear-gradient(
       //    45deg,
@@ -63,7 +64,7 @@
 .project-list-item-title {
    font-size: 1.25rem;
    margin-top: 1.5rem;
-   font-weight: 700;
+   font-weight: 800;
    line-height: 1.4;
    color: var(--link-color);
 
@@ -85,8 +86,14 @@
    @include screen-size(tablet-portrait) {
       font-size: 1.25rem;
    }
+
    @include screen-size(desktop) {
       font-size: 1.375rem;
+   }
+
+   a {
+      font-weight: 700;
+      color: var(--link-color);
    }
 }
 
@@ -102,7 +109,7 @@
    padding: 0.5rem 0.75rem;
    border-radius: 0.25rem;
    text-transform: uppercase;
-   font-weight: 600;
+   font-weight: 700;
    @include screen-size(desktop) {
       font-size: 0.875rem;
    }

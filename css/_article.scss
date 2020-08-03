@@ -18,7 +18,7 @@
 }
 
 .article-title {
-   font-weight: 700;
+   font-weight: 800;
    line-height: 1.25;
    font-size: 2rem;
    @include screen-size(tablet-portrait) {
@@ -30,30 +30,30 @@
 }
 
 .article-leading {
-   margin-top: 0.5em;
+   margin-top: 1em;
    font-size: 1.25rem;
    @include screen-size(tablet-portrait) {
       font-size: 1.25rem;
    }
 
    @include screen-size(tablet-landscape) {
-      font-size: 1.375rem;
+      font-size: 1.5rem;
    }
 
    @include screen-size(desktop) {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
    }
 }
 
 .article-body {
    margin-top: 2em;
-   font-size: 1rem;
+   font-size: 1.125rem;
    @include screen-size(tablet-portrait) {
-      font-size: 1.125rem;
+      font-size: 1.25rem;
    }
 
    @include screen-size(tablet-landscape) {
-      font-size: 1.25rem;
+      font-size: 1.375rem;
    }
 }
 

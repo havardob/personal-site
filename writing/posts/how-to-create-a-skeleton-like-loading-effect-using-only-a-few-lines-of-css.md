@@ -1,6 +1,6 @@
 ---
 title: How to create a skeleton-like loading effect using only a few lines of CSS (SCSS)
-summary: If you ever need to load something onto your site and want something a little smoother than a boring spinner.
+summary: Users hate to wait. Use skeleton loading instead of a boring spinner.
 date: 2020-06-12
 ---
 

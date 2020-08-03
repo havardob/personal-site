@@ -23,7 +23,7 @@
 }
 
 .bio-heading {
-   font-weight: 700;
+   font-weight: 800;
    font-size: 2rem;
    line-height: 1.25;
    @include screen-size(tablet-portrait) {
@@ -32,12 +32,12 @@
    }
 
    @include screen-size(tablet-landscape) {
-      font-size: 3rem;
+      font-size: 2.75rem;
       line-height: 1.125;
    }
 
    @include screen-size(desktop) {
-      font-size: 4rem;
+      font-size: 3.5rem;
       line-height: 1.125;
    }
 }
@@ -59,7 +59,7 @@
    }
 
    a {
-      font-weight: 600;
+      font-weight: 700;
       color: var(--link-color);
    }
 }
@@ -77,7 +77,10 @@
    figure {
       display: flex;
       justify-content: flex-end;
-      height: 65vh;
+      height: 40vh;
+      @include screen-size(tablet-landscape) {
+         height: 65vh;
+      }
    }
 
    img,

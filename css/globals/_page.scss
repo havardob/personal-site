@@ -14,7 +14,7 @@
 }
 
 .page-title {
-   font-weight: 700;
+   font-weight: 800;
    line-height: 1.25;
    font-size: 2rem;
    @include screen-size(tablet-portrait) {
@@ -36,7 +36,7 @@
    }
 
    a {
-      font-weight: 700;
+      font-weight: 800;
       color: var(--link-color);
    }
 }
