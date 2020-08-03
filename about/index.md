@@ -11,7 +11,7 @@ Hi! 👋 My name is Håvard Brynjulfsen and I'm a designer/front-end developer f
 
 I'm currently working as a webdesigner at [ACOS](https://acos.no).
 
-You can find med elsewhere on the web:
+You can find me elsewhere on the web:
 
 ✒ [CodePen](https://codepen.io/havardob/) <br />📜 [Medium](https://medium.com/@havard.brynjulfsen) <br />🐤 [Twitter](https://twitter.com/brynjulfs1) <br />🎬 [Letterboxd](https://letterboxd.com/havardob/)
 
