@@ -4,6 +4,8 @@ body {
    color: var(--primary-text-color);
    line-height: 1.6;
    position: relative;
+   scroll-behavior: smooth;
+   text-rendering: optimizeSpeed;
 
    &::-webkit-scrollbar {
       width: 20px;
