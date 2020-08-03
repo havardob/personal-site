@@ -19,10 +19,9 @@
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
-   // box-shadow: inset 0 0 0 10px lightcoral;
+   padding-bottom: 6rem;
    @include screen-size(tablet-landscape) {
       min-height: calc(100vh - 8rem);
-      // align-items: center;
    }
 }
 
