@@ -39,4 +39,17 @@
       font-weight: 800;
       color: var(--link-color);
    }
+
+   & > * + * {
+      margin-top: 1em;
+   }
+
+   ul,
+   ol {
+      padding-left: 40px;
+   }
+
+   ul {
+      list-style: disc;
+   }
 }
