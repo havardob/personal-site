@@ -49,7 +49,19 @@ dd {
 
 These elements have margins and I do not necessarily want that. If I want margins on my headings or paragraphs I'll add that where it seems fit, but I do not want it from the get-go.
 
-### 3. Body
+### 3. Horizontal scrolling is annoying
+
+```scss
+html {
+   overflow-x: hidden;
+}
+```
+
+Sometimes you find yourself in a position where you've added an element the exceeds the window's width and adds horizontal scrolling to the `<html>` element.
+
+I hate when that happens - and I struggle to find a scenario where I would want that either, so by default I remove horizontal scrolling.
+
+### 4. Body
 
 ```scss
 body {
@@ -62,7 +74,7 @@ The body is the parent of everything. I give it `line-height: 1.5` so that the t
 
 `scroll-behavior: smooth` secures that whenever a user uses an anchor to jump to a certain point on the website the site will scroll smoothly up/down to that point, not _snap_ to that point like the default does. It's just a personal preferance.
 
-### 4. Avoid overflowing images
+### 5. Avoid overflowing images
 
 ```scss
 img {
@@ -75,7 +87,7 @@ By default, if an image's width is wider than the container, it will overflow th
 
 Images are also inline by default, so writing `display: block` makes them easier to work with, like adding margin for instance.
 
-### 5. Change the default link styling
+### 6. Change the default link styling
 
 ```scss
 a {
@@ -86,7 +98,7 @@ a {
 
 Unstyled links are blue. This makes them the same color as the parent's color. Links should also differentiate from normal text, so therefore I make them bold by default.
 
-### 6. Fix the font on input elements
+### 7. Fix the font on input elements
 
 ```scss
 input,
@@ -115,7 +127,7 @@ select {
 }
 ```
 
-### 7. Remove the default button styling
+### 8. Remove the default button styling
 
 ```scss
 button {
@@ -126,7 +138,7 @@ button {
 
 Buttons are ugly by default. This makes them less ugly, but I still have to override their appearance wherever I need buttons in my design.
 
-### 8. Recude motion for people who prefers reduced motion
+### 9. Recude motion for people who prefers reduced motion
 
 ```scss
 @media (prefers-reduced-motion: reduce) {
@@ -169,6 +181,10 @@ dd {
    margin: 0;
 }
 
+html {
+   overflow-x: hidden;
+}
+
 body {
    scroll-behavior: smooth;
    line-height: 1.5;
@@ -206,4 +222,4 @@ button {
 }
 ```
 
-That's it, that's my go-to CSS resets. I always write more resets throughout a project (like `ul {list-style: none}`), but not on a global level like this.
+That's it, that's my go-to CSS resets. I always write more resets throughout a project (like `ul.some-class-name {list-style: none}`), but not on a global level like the ones above.
