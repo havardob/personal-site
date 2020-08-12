@@ -6,29 +6,38 @@
    justify-content: center;
    font-size: 2rem;
    position: fixed;
-   bottom: 2rem;
-   left: 2rem;
+   bottom: 0.5rem;
+   left: 0.5rem;
    border-radius: 50%;
    color: var(--secondary-text-color);
    background-color: var(--secondary-bg-color);
    cursor: pointer;
    z-index: 150;
+   @include screen-size(tablet-landscape) {
+      bottom: 2rem;
+      left: 2rem;
+   }
 }
 
 .site-info {
    position: fixed;
    padding: 1.5rem;
    background-color: var(--secondary-bg-color);
-   bottom: 6rem;
+   bottom: 4.5rem;
    border-radius: 0.5rem;
-   left: 2rem;
-   max-width: calc(100vw - 2rem);
+   left: 0.5rem;
+   max-width: calc(100vw - 1rem);
    visibility: hidden;
    transform: scale(0);
    transform-origin: 0 100%;
    transition: transform 0.25s ease-in-out;
    font-size: 1rem;
    z-index: 150;
+   @include screen-size(tablet-landscape) {
+      bottom: 6rem;
+      left: 2rem;
+      max-width: calc(100vw - 4rem);
+   }
 
    &.open {
       visibility: visible;
