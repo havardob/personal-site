@@ -106,10 +106,11 @@ button,
 textarea,
 select {
    font: inherit;
+   color: inherit;
 }
 ```
 
-It's so frickin stupid that I have to even write this reset, but input elements (like the ones above) does not inherit `font-family`, `line-height`,`color` or `font-size` from `body` by default.
+It's so frickin stupid that I even have to write this reset, but input elements (like the ones above) does not inherit `font-family`, `line-height`, `font-size` or `color` from `body` by default.
 
 `font: inherit` thankfully takes care of this.
 
@@ -122,8 +123,8 @@ textarea,
 select {
    font-family: inherit;
    font-size: inherit;
-   color: inherit;
    line-height: inherit;
+   color: inherit;
 }
 ```
 
