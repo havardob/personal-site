@@ -112,7 +112,7 @@ select {
 
 It's so frickin stupid that I even have to write this reset, but input elements (like the ones above) does not inherit `font-family`, `line-height`, `font-size` or `color` from `body` by default.
 
-`font: inherit` thankfully takes care of this.
+`font: inherit` and `color: inherit` thankfully takes care of this.
 
 **FYI**, this could also have been written like this:
 
